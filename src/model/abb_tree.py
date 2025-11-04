@@ -25,44 +25,6 @@ class ABBTree:
             else:
                 self._insertar_recursivo(nodo.derecho, valor)
 
-    # def cant_niveles_espejo(self):
-    #     if self.raiz is None:
-    #         return 0
-    #
-    #     niveles = set()
-    #     self._verificar_niveles_espejo(self.raiz.izquierdo, self.raiz.derecho, 1, niveles)
-    #     return len(niveles)
-    #
-    # def cantidad_nodos_espejo(self):
-    #     if self.raiz is None:
-    #         return 0
-    #
-    #     niveles = set()
-    #     contador = [0]  # Usamos lista para que sea mutable
-    #     self._verificar_niveles_espejo(self.raiz.izquierdo, self.raiz.derecho, 1, niveles, contador)
-    #     return contador[0]
-    #
-    # def niveles_espejo(self):
-    #     if self.raiz is None:
-    #         return []
-    #
-    #     niveles = set()
-    #     self._verificar_niveles_espejo(self.raiz.izquierdo, self.raiz.derecho, 1, niveles)
-    #     return niveles
-    #
-    # def _verificar_niveles_espejo(self, nodo1, nodo2, nivel, niveles, contador=None):
-    #     if nodo1 is None and nodo2 is None:
-    #         return True
-    #     if nodo1 is not None and nodo2 is not None:
-    #         izq = self._verificar_niveles_espejo(nodo1.izquierdo, nodo2.derecho, nivel + 1, niveles, contador)
-    #         der = self._verificar_niveles_espejo(nodo1.derecho, nodo2.izquierdo, nivel + 1, niveles, contador)
-    #
-    #         if izq and der:
-    #             niveles.add(nivel)
-    #             if contador is not None:
-    #                 contador[0] += 2  # nodo1 y nodo2 son simétricos
-    #             return True
-    #     return False
 
     def _estructura_espejo(self, nodo1, nodo2):
         if nodo1 is None and nodo2 is None:

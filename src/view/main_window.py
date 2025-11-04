@@ -103,7 +103,7 @@ class MainWindow:
                                      fg_color="#1565C0", hover_color="#0D47A1",
                                      font=ctk.CTkFont(size=13, weight="bold"),
                                      height=32, corner_radius=8)
-        # btn_insertar.pack(fill="x", padx=10, pady=(0, 10))
+        btn_insertar.pack(fill="x", padx=10, pady=(0, 10))
 
         ctk.CTkLabel(frame_insertar, text="Múltiples valores (separados por comas):").pack(
             anchor='w', padx=10, pady=(5, 0))

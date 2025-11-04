@@ -89,11 +89,6 @@ class TreeController:
 
         return self.arbol_actual.recorrido_inorden()
 
-    # def verificar_espejo(self):
-    #     if self.arbol_actual is None:
-    #         return []
-    #     return self.arbol_actual.verificar_espejo()
-
     def obtener_arbol(self):
         """Retorna el árbol actual para visualización"""
         return self.arbol_actual
